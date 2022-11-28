@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=KT, initial-scale=1.0" />
+    <title>Rolex - Responsive Watches Website</title>
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+    <!-- link bootstrap css -->
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <!-- Custom file iconfont -->
+    <link rel="stylesheet" href="./icofont/icofont.min.css" />
+    <!-- Aos Cdn Animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./style/all.min.css">
+    <!-- Swiper Deoms -->
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"  />
+    <!-- custom file css -->
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg py-4 fixed-top">
+      <div class="container">
+        <a class="navbar-brand title-white d-flex align-items-center me-5" href="#">
+          <img class="watch-sun w-50 me-1" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/womens-watch.png"/>
+          <img
+            class="w-50 me-1 watch-dark"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABQElEQVRIia2WMU7DQBBFHzREwm0uEZBwRUgF94BT5BooiJA6tyAUNOQKCEIPoksDXSwhmSLfwho2u2MnXxqtvPNn/sgzuzbE0QXKhHVjCfYTAkcJP0BvFwJTYM/Y1FNESqCqbhHwLQynFeake/DUNvkBsHQILMVthA7woAQrYAz0gUNZH7iTrwRminHjVoGfwEmEl4tTAiNv8mPgR9XZ5NVrsSIrxbgaPlKSccAXEgCYaP/aI/Ai8mkDgTPtP3sEvkXOIgJWKNPzlw1IHTQvNuYJOT60hhpmrwsM990j8Kj1alNVAVya2CjqY5o7+DlQ0GBMAW74O2gxkfpBc41ohQ7r41+qugnrUcxkA+0V4tzT4j7ayWUXG9OC8HfA4lXcxgLUBIb8H9Gh4bQSeNMa+iz2DKcVLkj34Hwbga1/W34BbLh+dSN9Tp0AAAAASUVORK5CYII="
+          />Rolex
+        </a>
+        <button
+          class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav"  aria-expanded="false"  
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link me-3 title-white active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3 title-white" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3 title-white" href="#story">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3 title-white" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3 title-white" href="#new">New</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3 title-white" href="#shop">Shop</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item d-flex">
+                <span class="me-4 dark">
+                    <img class="w-75" src="https://img.icons8.com/external-ios-line-2px-amoghdesign/30/null/external-dark-multimedia-line-30px-ios-line-2px-amoghdesign.png"/>
+                </span>
+                <span class="me-4 sun title-white">
+                  <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/sun--v1.png"/>
+                </span>
+                <span>
+                  <img id="bag-dark" class="bag-dark" src="https://img.icons8.com/external-anggara-detail-outline-anggara-putra/24/null/external-bag-retail-anggara-detail-outline-anggara-putra-2.png"/>
+                  <img id="bag-dark" class="bag-sun" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/shopping-bag-full.png"/>
+                </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <div class="cart py-3 px-5" id="cart">
+      <i class="fa-solid fa-xmark title-white" id="close"></i>
+      <h2 class="title-white">My Cart</h2>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-12">
+            <div class="px-2 carts d-flex align-items-center">
+              <img src="./image/featured1.png" alt="">
+              <div class="ms-5">
+                <h4 class="title-white">Jazzmaster</h4>
+                <span>$1050</span>
+                <div class="d-flex  align-items-center mt-4">
+                  <i class="fa-solid fa-minus"></i>
+                  <span class="mx-4">1</span>
+                  <i class="fa-solid fa-plus"></i>
+                  <span class="ms-5 d-flex">
+                    <i class="fa-solid fa-trash"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="px-2 carts d-flex align-items-center">
+              <img src="./image/featured2.png" alt="">
+              <div class="ms-5">
+                <h4 class="title-white">Rose Gold</h4>
+                <span>$850</span>
+                <div class="d-flex  align-items-center mt-4">
+                  <i class="fa-solid fa-minus"></i>
+                  <span class="mx-4">1</span>
+                  <i class="fa-solid fa-plus"></i>
+                  <span class="ms-5 d-flex">
+                    <i class="fa-solid fa-trash"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="px-2 carts d-flex align-items-center">
+              <img src="./image/featured3.png" alt="">
+              <div class="ms-5">
+                <h4 class="title-white">Longines Rose</h4>
+                <span>$950</span>
+                <div class="d-flex  align-items-center mt-4">
+                  <i class="fa-solid fa-minus"></i>
+                  <span class="mx-4">1</span>
+                  <i class="fa-solid fa-plus"></i>
+                  <span class="ms-5 d-flex">
+                    <i class="fa-solid fa-trash"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="box px-2 d-flex justify-content-between align-items-center">
+              <h5 class="title-white">3 items</h5>
+              <h4 class="title-white">$2880</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start home -->
+    <header class="home py-5" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box vh-100 d-flex align-items-center">
+                      <div class="links position-absolute">
+                          <a href="#home" class="links-home">facebook</a>
+                          <a href="#home" class="links-home">Twitter</a>
+                          <a href="#home" class="links-home">instagram</a>
+                      </div>
+                      <div class="home-title">
+                        <h1 class="title-white">New watch <br> Collections B720</h1>
+                        <p class="text-muted my-3">Latest arrival of the new imported watches of the B720 series, with a 
+                            modern and resistant design.
+                        </p>
+                        <span class="d-block mb-5">$1245</span>
+                        <div class="d-flex align-items-center">
+                          <a href="#home" class="btn btns-light">Discover</a>
+                          <button class="btn btns-dark">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="images">
+                    <img src="./image/home.png" alt="">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end home -->
+    <!-- start features -->
+    <section class="features title-black py-5" id="features">
+      <div class="container">
+        <div class="title pt-5">
+          <h2 class="title-white" data-aos="fade-up" data-aos-duration="2500"
+          data-aos-anchor-placement="bottom-bottom">features</h2>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs active">
+              <span class="sale">Sale</span>
+              <div class="d-flex justify-content-center">
+                <img src="./image/featured1.png" alt="">
+              </div>
+              <div class="small-box">
+                <h5>jazzmaster</h5>
+                <span class="mb-5">$1050</span>
+                <button class="btn btns-dark">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs active">
+              <span class="sale">Sale</span>
+              <div class="d-flex justify-content-center">
+                <img src="./image/featured2.png" alt="">
+              </div>
+              <div class="small-box">
+                <h5>ingersoll</h5>
+                <span class="mb-5">$250</span>
+                <button class="btn btns-dark">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs active">
+              <span class="sale">Sale</span>
+              <div class="d-flex justify-content-center">
+                <img src="./image/featured3.png" alt="">
+              </div>
+              <div class="small-box">
+                <h5>rose gold</h5>
+                <span class="mb-5">$890</span>
+                <button class="btn btns-dark">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end features -->
+    <!-- start story -->
+    <section class="story py-5" id="story">
+      <div class="container">
+        <div class="row gy-4 py-5 align-items-center">
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="images">
+              <img src="./image/story.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="py-5">
+              <div class="story-title">
+                <h2 class="title-white">our story</h2>
+              </div>
+              <div>
+                <h3 class="title-white">Inspirational Watch of this year</h3>
+                <p class="text-muted mb-5 mt-3">The latest and modern watches of this year, is available in various presentations in 
+                  this store, discover them now.
+                </p>
+                <button class="btn btns-dark">Discover</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end story -->
+    <!-- start product -->
+    <section class="products py-5" id="products">
+      <div class="container">
+        <div class="title pt-5">
+          <h2 class="title-white" data-aos="fade-up" data-aos-duration="2500"
+          data-aos-anchor-placement="bottom-bottom">products</h2>
+        </div>
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs active">
+              <div>
+                <div class="d-flex justify-content-center">
+                  <img src="./image/product1.png" alt="">
+                </div>
+                <div class="text-center py-4">
+                  <h5>spirit rose</h5>
+                  <span>$1500</span>
+                </div>
+                <div class="shopping-bag">
+                  <i class="icofont-bag-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs active">
+              <div>
+                <div class="d-flex justify-content-center">
+                  <img src="./image/product2.png" alt="">
+                </div>
+                <div class="text-center py-3">
+                  <h5>Khaki pilot</h5>
+                  <span>$1350</span>
+                </div>
+                <div class="shopping-bag">
+                  <i class="icofont-bag-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs active">
+              <div>
+                <div class="d-flex justify-content-center">
+                  <img src="./image/product3.png" alt="">
+                </div>
+                <div class="text-center py-3">
+                  <h5>jubilee black</h5>
+                  <span>$890</span>
+                </div>
+                <div class="shopping-bag">
+                  <i class="icofont-bag-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs active">
+              <div>
+                <div class="d-flex justify-content-center">
+                  <img src="./image/product4.png" alt="">
+                </div>
+                <div class="text-center py-3">
+                  <h5>Fosil me3</h5>
+                  <span>$570</span>
+                </div>
+                <div class="shopping-bag">
+                  <i class="icofont-bag-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs active">
+              <div>
+                <div class="d-flex justify-content-center">
+                  <img src="./image/product5.png" alt="">
+                </div>
+                <div class="text-center py-3">
+                  <h5>duchen</h5>
+                  <span>$950</span>
+                </div>
+                <div class="shopping-bag">
+                  <i class="icofont-bag-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end product -->
+    <!-- start testimonial -->
+    <section class="testimonial py-5">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testi-box px-4">
+                    <span class="mb-5"><i class="icofont-quote-left"></i></span>
+                    <p class="mt-4 text-muted">
+                      They are the best watches that one acquires, also they are always with the latest 
+                      news and trends, with a very comfortable price and especially with the attention 
+                      you receive, they are always attentive to your questions.
+                    </p>
+                    <h3 class="title-white">March 27. 2021</h3>
+                    <div class="text-title d-flex align-items-center mt-4">
+                      <img src="./image/testimonial1.jpg" alt="">
+                      <div class="ms-3">
+                        <h4 class="title-white">Leo Doe</h4>
+                        <h5 class="title-white">Director of a company</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testi-box px-4">
+                    <span class="mb-5"><i class="icofont-quote-left"></i></span>
+                    <p class="mt-4 text-muted">
+                      They are the best watches that one acquires, also they are always with the latest 
+                      news and trends, with a very comfortable price and especially with the attention 
+                      you receive, they are always attentive to your questions.
+                    </p>
+                    <h3 class="active">March 27. 2021</h3>
+                    <div class="text-title d-flex align-items-center mt-4">
+                      <img src="./image/testimonial2.jpg" alt="">
+                      <div class="ms-3">
+                        <h4 class="title-white">Samantha Mey</h4>
+                        <h5 class="title-white">Director of a company</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testi-box px-4">
+                    <span class="mb-5"><i class="icofont-quote-left"></i></span>
+                    <p class="mt-4 text-muted">
+                      They are the best watches that one acquires, also they are always with the latest 
+                      news and trends, with a very comfortable price and especially with the attention 
+                      you receive, they are always attentive to your questions.
+                    </p>
+                    <h3 class="title-white">March 27. 2021</h3>
+                    <div class="text-title d-flex align-items-center mt-4">
+                      <img src="./image/testimonial3.jpg" alt="">
+                      <div class="ms-3">
+                        <h4 class="title-white">Raul Zaman</h4>
+                        <h5 class="title-white">Director of a company</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="image">
+              <img src="./image/testimonial.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end testimonial -->
+    <!-- start new -->
+    <section class="new py-5" id="new">
+      <div class="container">
+        <div class="title pt-5">
+          <h2 class="title-white" data-aos="fade-up" data-aos-duration="2500"
+          data-aos-anchor-placement="bottom-bottom">New Arrivals</h2>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs actvie">
+              <span class="new-span">new</span>
+              <div class="d-flex justify-content-center">
+                <img src="./image/new1.png" alt="">
+              </div>
+              <div class="small-box">
+                <h5>longines rose</h5>
+                <span class="mb-5 title">$980</span>
+                <button class="btn btns-dark">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs actvie">
+              <span class="new-span">new</span>
+              <div class="d-flex justify-content-center">
+                <img src="./image/new2.png" alt="">
+              </div>
+              <div class="small-box">
+                <h5>jazzmaster</h5>
+                <span class="mb-5 title">$1150</span>
+                <button class="btn btns-dark">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs actvie">
+              <span class="new-span">new</span>
+              <div class="d-flex justify-content-center">
+                <img src="./image/new3.png" alt="">
+              </div>
+              <div class="small-box">
+                <h5>Dreyfuss gold</h5>
+                <span class="mb-5 title">$750</span>
+                <button class="btn btns-dark">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs actvie">
+              <span class="new-span">new</span>
+              <div class="d-flex justify-content-center">
+                <img src="./image/new1.png" alt="">
+              </div>
+              <div class="small-box">
+                <h5>portuguese rose</h5>
+                <span class="mb-5 title">$1590</span>
+                <button class="btn btns-dark">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end new -->
+    <!-- start shopping -->
+    <section class="shopping py-5" id="shop">
+      <div class="container">
+        <div class="title pt-5">
+          <h2 class="title-white" data-aos="fade-up" data-aos-duration="2500"
+          data-aos-anchor-placement="bottom-bottom">Best shopping</h2>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs actvie">
+              <span class="new-span">shop</span>
+              <div class="d-flex justify-content-center">
+                <img src="./image/new1.png" alt="">
+              </div>
+              <div class="small-box">
+                <h5>longines rose</h5>
+                <span class="mb-5 title">$980</span>
+                <button class="btn btns-dark">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs actvie">
+              <span class="new-span">shop</span>
+              <div class="d-flex justify-content-center">
+                <img src="./image/new2.png" alt="">
+              </div>
+              <div class="small-box">
+                <h5>jazzmaster</h5>
+                <span class="mb-5 title">$1150</span>
+                <button class="btn btns-dark">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs actvie">
+              <span class="new-span">shop</span>
+              <div class="d-flex justify-content-center">
+                <img src="./image/new3.png" alt="">
+              </div>
+              <div class="small-box">
+                <h5>Dreyfuss gold</h5>
+                <span class="mb-5 title">$750</span>
+                <button class="btn btns-dark">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxs actvie">
+              <span class="new-span">shop</span>
+              <div class="d-flex justify-content-center">
+                <img src="./image/new1.png" alt="">
+              </div>
+              <div class="small-box">
+                <h5>portuguese rose</h5>
+                <span class="mb-5 title">$1590</span>
+                <button class="btn btns-dark">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end shopping -->
+    <!-- start newsletter -->
+    <section class="news-letter py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="px-5 py-4">
+              <h2>subscribe Our <br> Newsletter</h2>
+              <p class="mt-4">Don't miss out on your discounts. Subscribe to our email newsletter to get the 
+                best offers, discounts, coupons, gifts and much more.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="forms d-flex py-4 px-5">
+              <input type="email" placeholder="Enter Your email" class="form-control py-4 px-3">
+              <button class="btn btns-dark">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end newsletter -->
+    <!-- start footer -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="titles">
+              <h3 class="title-white" data-aos="fade-up" data-aos-duration="2500"
+          data-aos-anchor-placement="bottom-bottom">Our information</h3>
+              <ul class="p-0">
+                <li class=""><p>shamimabad,sylhet </p></li>
+                <li class=""><p>sylhet,Bangladesh </p></li>
+                <li class=""><p>123-456-789 </p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="titles">
+              <h3 class="title-white" data-aos="fade-up" data-aos-duration="2500"
+          data-aos-anchor-placement="bottom-bottom">About Us</h3>
+              <ul class="p-0">
+                <li class=""><p><a href="#home">Support Center</a> </p></li>
+                <li class=""><p><a href="#home">Customer Support</a> </p></li>
+                <li class=""><p><a href="#home">About Us</a> </p></li>
+                <li class=""><p><a href="#home">Copy Right</a> </p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="titles">
+              <h3 class="title-white" data-aos="fade-up" data-aos-duration="2500"
+          data-aos-anchor-placement="bottom-bottom">Product</h3>
+              <ul class="p-0">
+                <li class=""><p><a href="#home">Road bikes</a> </p></li>
+                <li class=""><p><a href="#home">Mountain bikes</a> </p></li>
+                <li class=""><p><a href="#home">Electric</a> </p></li>
+                <li class=""><p><a href="#home">Accesories</a> </p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="titles">
+              <h3 class="title-white" data-aos="fade-up" data-aos-duration="2500"
+          data-aos-anchor-placement="bottom-bottom">Social</h3>
+              <ul class="p-0 d-flex">
+                <li class=""><p><a class="me-4" href="#home"><i class="icofont-facebook"></i></a> </p></li>
+                <li class=""><p><a class="me-4" href="#home"><i class="icofont-twitter"></i></a> </p></li>
+                <li class=""><p><a class="me-4" href="#home"><i class="icofont-instagram"></i></a> </p></li>
+                <li class=""><p><a class="me-4" href="#home"><i class="icofont-dribbble"></i></a> </p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="all-rights py-3">
+      <div class="text-center">
+        <p>All rights &copy; Reserved-2022</p>
+      </div>
+    </section>
+    <!-- end footer -->
+    <!-- SpinKit -->
+    <section id="spin">
+      <div class="sk-fading-circle">
+        <div class="sk-circle1 sk-circle"></div>
+        <div class="sk-circle2 sk-circle"></div>
+        <div class="sk-circle3 sk-circle"></div>
+        <div class="sk-circle4 sk-circle"></div>
+        <div class="sk-circle5 sk-circle"></div>
+        <div class="sk-circle6 sk-circle"></div>
+        <div class="sk-circle7 sk-circle"></div>
+        <div class="sk-circle8 sk-circle"></div>
+        <div class="sk-circle9 sk-circle"></div>
+        <div class="sk-circle10 sk-circle"></div>
+        <div class="sk-circle11 sk-circle"></div>
+        <div class="sk-circle12 sk-circle"></div>
+      </div>
+    </section>
+    <!-- custom file bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Custom File jquery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- Aos Animate js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- custom file js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
